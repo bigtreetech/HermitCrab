@@ -52,7 +52,7 @@
     ```
 3. If you use Canbus to communicate with raspberry pi, you need to modify the following files by SSH command. And wiring reference [here](#raspberry-pi-communicates-with-the-hotend-board-via-canbus)<br/>
    Refer to [klipper's official Canbus config](https://www.klipper3d.org/CANBUS.html) to set Canbus
-   * Input `sudo nano /boot/config.txt command`, input the password (default: raspberry), Then add the following content to the `config.txt` file
+   * Input `sudo nano /boot/config.txt` command, input the password (default: raspberry), Then add the following content to the `config.txt` file
      ```
      dtparam=spi=on
      dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=1000000
