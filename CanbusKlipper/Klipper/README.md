@@ -26,6 +26,7 @@
       * Clock Reference = `8 MHz crystal)`
       * IF USE USB
          * Communication interface = `USB (on PA11/PA12)`
+         * USB ids `0x1d50` for USB vender ID, and `0x614f` for USB device ID. (Note: it is important that hte USB device ID is not the default `0x614e` assigned by Klipper as this causes the device to lose connection during `FIRMWARE_RESTART`
       * ElSE IF USE CANBUS
          * Communication interface = `CAN bus (on PB8/PB9)`
          * CAN bus speed = 250000 ([firmware-F072-Canbus.bin](./firmware-F072-Canbus.bin) default speed is 250K, You can set it by yourself, But you need to reduce the speed if the communication fails)
