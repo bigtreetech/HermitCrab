@@ -24,6 +24,7 @@
       * Micro-controller Architecture = `STMicroelectronics STM32`
       * Processor model = `STM32F072`(Note: You can set `Processor model` to `STM32F070` or wait for [PR](https://github.com/Klipper3d/klipper/pull/4799) to merge into the master branch and use the latest version of klipper firmware if your firmware has no USB option for `STM32F072`)
       * Clock Reference = `8 MHz crystal)`
+      * Bootloader offset = `No bootloader`
       * IF USE USB
          * Communication interface = `USB (on PA11/PA12)`
          * USB ids `0x1d50` for USB vender ID, and `0x614f` for USB device ID. (Note: it is important that hte USB device ID is not the default `0x614e` assigned by Klipper as this causes the device to lose connection during `FIRMWARE_RESTART`
